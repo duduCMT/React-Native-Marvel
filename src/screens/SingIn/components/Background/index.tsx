@@ -1,12 +1,12 @@
 import React, { ReactNode, useEffect, useState } from 'react'
-import { View } from 'react-native'
-import { MotiView, AnimatePresence, useAnimationState } from 'moti'
+import { Keyboard, View } from 'react-native'
+import { AnimatePresence, useAnimationState } from 'moti'
 import { resizeByHeight, resizeByWidth } from '../../../../styles/metrics'
-import { BackgroundImage, Gradient, SolidBackgroundContainer } from './styles'
-import { 
-  animationBg1 as aniBg1, 
-  animationBg2 as aniBg2, 
-  animationGradient as aniGradient 
+import { BackgroundImage, Gradient, GradientContainer, SolidBackgroundContainer } from './styles'
+import {
+  animationBg1 as aniBg1,
+  animationBg2 as aniBg2,
+  animationGradient as aniGradient
 } from './animations'
 
 const bg1 = require('../../../../assets/img/bg01.png')
@@ -26,44 +26,54 @@ export default function Background({ children }: Props) {
   const animationBg1 = useAnimationState(aniBg1)
   const animationBg2 = useAnimationState(aniBg2(initialSizeBg2, endSizeBg2))
   const animationGradient = useAnimationState(aniGradient)
-  
+
   useEffect(() => {
-    setTimeout(() => {
-      animationBg1.transitionTo('show')
+    if(animationBg1.current === 'from'){
       setTimeout(() => {
-        animationBg2.transitionTo('show')  
-        setVisibleBg1(false)
+        animationBg1.transitionTo('show')
         setTimeout(() => {
-          animationBg2.transitionTo('reduce')
-          animationGradient.transitionTo('show')
+          animationBg2.transitionTo('show')
+          setVisibleBg1(false)
+          setTimeout(() => {
+            animationBg2.transitionTo('reduce')
+            animationGradient.transitionTo('show')
+          }, 1400)
         }, 1400)
-      }, 1400)
-    }, 600)
+      }, 600)
+    }
+    
+    const keyboardOpen = Keyboard.addListener("keyboardDidShow", () => {
+      animationBg2.transitionTo('lowOpacity')
+    });
+    const keyboardClose = Keyboard.addListener("keyboardDidHide", () => {
+      animationBg2.transitionTo('normalOpacity')
+    });
+
+    return () => {
+      keyboardOpen.remove();
+      keyboardClose.remove();
+    };
   }, [])
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <SolidBackgroundContainer>
         <BackgroundImage
-          style={{ alignSelf: 'center' }}
-          transition={{ type: 'timing', duration: 800,}}
           state={animationBg2}
           source={bg2}
+          center
         />
-        <MotiView
-          state={animationGradient}
-          transition={{ type: 'timing', duration: 800, }}
-        >
-          <Gradient style={{...endSizeBg2}} />
-        </MotiView>
+        <GradientContainer state={animationGradient}>
+          <Gradient {...endSizeBg2} />
+        </GradientContainer>
       </SolidBackgroundContainer>
 
+
       <AnimatePresence exitBeforeEnter>
-        { visibleBg1 &&
+        {visibleBg1 &&
           <SolidBackgroundContainer
             state={animationBg1}
             exit={{ opacity: 0 }}
-            transition={{ type: 'timing', duration: 800, }}
           >
             <BackgroundImage resizeMode='cover' source={bg1} />
           </SolidBackgroundContainer>

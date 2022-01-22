@@ -19,6 +19,8 @@ export const animationBg2 = (initialSize: ImageSize, endSize: ImageSize) => {
       height: endSize.height,
       marginLeft: 0,
     },
+    lowOpacity: { opacity: 0.1, },
+    normalOpacity: { opacity: 0.25, },
   }
 }
 
