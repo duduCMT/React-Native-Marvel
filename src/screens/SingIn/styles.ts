@@ -1,3 +1,4 @@
+import { utils } from './utils'
 import { StyleSheet } from "react-native"
 import { metrics } from "../../styles"
 
@@ -10,9 +11,10 @@ export const styles = StyleSheet.create({
   },
   content: {
     width: '100%',
+    height: '100%',
     flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: 45,
+    marginTop: utils.marginTop,
   },
   logo: {
     height: metrics.logoHeight,
