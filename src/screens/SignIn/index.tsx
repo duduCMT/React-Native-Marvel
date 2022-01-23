@@ -12,7 +12,6 @@ import {
 import {
   Container,
   Content,
-  Logo,
   Form,
   Title,
   Subtitle,
@@ -25,8 +24,7 @@ import {
 import api from '../../services/api'
 import { useDispatch } from 'react-redux'
 import { Creators } from '../../store/ducks/user'
-
-const logo = require('../../assets/img/logo.png')
+import Logo from '../../components/Logo'
 
 export default function SignIn() {
   const dispatch = useDispatch()
@@ -82,7 +80,7 @@ export default function SignIn() {
     <Container>
       <Background>
         <Content>
-          <Logo state={animationLogo} source={logo} />
+          <Logo state={animationLogo}/>
           <Form state={animationForm} >
             <Title>Bem-Vindo!</Title>
             <Subtitle>Fazer Login!</Subtitle>

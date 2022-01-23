@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { View, Text, TouchableOpacity, TextInput } from "react-native"
-import { MotiView, MotiImage } from 'moti'
-import { colors, fonts, metrics } from "../../styles"
+import { MotiView } from 'moti'
+import { colors, fonts } from "../../styles"
 import { utils } from './utils'
 
 export const Container = styled(View)`flex: 1;`
@@ -10,13 +10,6 @@ export const Content = styled(View)`
   flex: 1;
   align-items: center;
   margin-top: ${utils.marginTop}px;
-`
-
-export const Logo = styled(MotiImage).attrs({
-  transition: { type: 'timing', duration: 800, },
-})`
-  height: ${metrics.logoHeight}px;
-  width: ${metrics.logoWidth}px; 
 `
 
 export const Form = styled(MotiView).attrs({
