@@ -1,5 +1,4 @@
 import { LinearGradient } from 'expo-linear-gradient'
-import { StyleSheet } from "react-native"
 import styled from 'styled-components/native';
 import { colors } from "../../../../styles";
 import { MotiView, MotiImage } from 'moti'
@@ -34,7 +33,7 @@ export const Gradient = styled(LinearGradient).attrs({
 })<{width?: number; height?: number}>
 `
   position: absolute;
-  bottom: 16px;
+  bottom: 0;
   ${({width}) => width ? `width: ${width}px` : ''}
   ${({height}) => height ? `height: ${height}px` : ''}
 `

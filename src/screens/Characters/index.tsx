@@ -1,17 +1,17 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import Logo from '../../components/Logo'
-import { styles } from './styles'
+import { Text } from 'react-native'
+import Header from '../../components/Header'
+import { Container } from './styles'
 
 type Props = {
-  
+
 }
 
-export default function Characters({}: Props){
+export default function Characters({ }: Props) {
   return (
-    <View style={styles.container}>
-      <Logo small />
-      <Text style={styles.title}>Characters</Text>
-    </View>
+    <Container>
+      <Header />
+      <Text>Characters</Text>
+    </Container>
   )
 }

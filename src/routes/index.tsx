@@ -5,19 +5,19 @@ import AppRoutes from './app.routes'
 import AuthRoutes from './auth.routes'
 
 type Props = {
-  
+
 }
 
-export default function Routes({}: Props){
+export default function Routes({ }: Props) {
   const user = useSelector((state: ApplicationState) => state.user.data)
 
   return (
     <NavigationContainer>
-      { 
-        !user 
+      {
+        !user
         ? <AuthRoutes />
         : <AppRoutes />
       }
-    </NavigationContainer>  
+    </NavigationContainer>
   )
 }

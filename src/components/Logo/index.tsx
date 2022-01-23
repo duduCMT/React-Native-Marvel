@@ -1,8 +1,9 @@
 import { MotiImage } from "moti";
 import styled from "styled-components";
-import { metrics } from "../../styles";
+import { size } from "../../styles";
 
 const logo = require('../../assets/img/logo.png')
+const { LOGO } = size
 
 type Props = {
   small?: boolean
@@ -12,8 +13,8 @@ const Logo = styled(MotiImage).attrs({
   transition: { type: 'timing', duration: 800, },
   source: logo
 })<Props>`
-  height: ${({small}) => !small ? metrics.logoHeight : metrics.smallLogoHeight }px;
-  width: ${({small}) => !small ? metrics.logoWidth : metrics.smallLogoWidth }px;
+  height: ${({small}) => !small ? LOGO.mediumHeight : LOGO.smallHeight }px;
+  width: ${({small}) => !small ? LOGO.mediumWidth : LOGO.smallWidth }px;
 `
 
 export default Logo

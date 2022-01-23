@@ -36,28 +36,32 @@ export default function SignIn() {
   const animationLogo = useAnimationState(aniLogo)
   const animationForm = useAnimationState(aniForm)
 
-  function handleSubmit(){
-    if(!email || !password){
+  function handleSubmit() {
+    if (!email || !password) {
       console.warn('Informações Incompletas')
       return;
-    } 
+    }
 
     api.post('/signin', {
       email,
       password
     }).then((response) => {
-      const user = response.data.user as User  
-      dispatch(Creators.setUser(user))
+
       
+
+
+      const user = response.data.user as User
+      dispatch(Creators.setUser(user))
+
     }).catch((error) => {
-      if(error.response){
-        switch(error.response.status) {
-          case 400: 
+      if (error.response) {
+        switch (error.response.status) {
+          case 400:
             Alert.alert('Dados inválidos.', 'E-mail ou senha incorrentos. Tente novamente.')
             break
         }
       }
-      
+
     })
   }
 
@@ -80,7 +84,8 @@ export default function SignIn() {
     <Container>
       <Background>
         <Content>
-          <Logo state={animationLogo}/>
+          <Logo state={animationLogo} />
+
           <Form state={animationForm} >
             <Title>Bem-Vindo!</Title>
             <Subtitle>Fazer Login!</Subtitle>
@@ -102,7 +107,7 @@ export default function SignIn() {
               <ButtonText>Entrar</ButtonText>
             </Button>
             <CheckBox
-              title='Salvar dados de login e entre automaticamente'
+              title='Salvar dados de login e entrar automaticamente'
               checked={saveCheck}
               onPress={() => setSaveCheck(!saveCheck)}
             />

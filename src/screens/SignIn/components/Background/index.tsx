@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useState } from 'react'
 import { Keyboard, View } from 'react-native'
 import { AnimatePresence, useAnimationState } from 'moti'
-import { resizeByHeight, resizeByWidth } from '../../../../styles/metrics'
+import { size } from '../../../../styles'
 import { BackgroundImage, Gradient, GradientContainer, SolidBackgroundContainer } from './styles'
 import {
   animationBg1 as aniBg1,
@@ -20,8 +20,8 @@ type Props = {
 
 export default function Background({ children }: Props) {
   const [visibleBg1, setVisibleBg1] = useState(true)
-  const initialSizeBg2 = resizeByHeight(bg2Size.height, bg2Size.width, 1)
-  const endSizeBg2 = resizeByWidth(bg2Size.height, bg2Size.width, 1)
+  const initialSizeBg2 = size.SCREEN.resizeByHeight(bg2Size.height, bg2Size.width, 1)
+  const endSizeBg2 = size.SCREEN.resizeByWidth(bg2Size.height, bg2Size.width, 1)
 
   const animationBg1 = useAnimationState(aniBg1)
   const animationBg2 = useAnimationState(aniBg2(initialSizeBg2, endSizeBg2))

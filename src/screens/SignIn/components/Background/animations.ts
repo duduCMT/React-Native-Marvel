@@ -1,4 +1,4 @@
-import { metrics } from '../../../../styles'
+import { size } from '../../../../styles'
 
 export const animationBg1 = {
   from: { opacity: 0 },
@@ -25,6 +25,6 @@ export const animationBg2 = (initialSize: ImageSize, endSize: ImageSize) => {
 }
 
 export const animationGradient = {
-  from: {transform: [{ translateY: -metrics.screenHeight }],},
+  from: {transform: [{ translateY: -size.SCREEN.height }],},
   show: {transform: [{ translateY: 0 }],}
 }
