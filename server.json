@@ -21,5 +21,415 @@
       "avatar": "https://static.diverseui.com/male-78.jpg",
       "id": 3
     }
+  ],
+  "movies": [
+    {
+      "title": "Homem de Ferro",
+      "description": "Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor.",
+      "image": "https://img.elo7.com.br/product/zoom/1DFB189/poster-cartaz-iron-man-homem-de-ferro-poster-tematico.jpg",
+      "cronology": 3,
+      "stars": 4,
+      "streaming": [
+        {
+          "name": "Disney Plus",
+          "image": "https://thedirect.s3.amazonaws.com/media/tag_thumbnail/The_Direct_Tag_-_Disney_Plus_ede62Wo_3qkyLJb_lAj1XIk_2eACkna_Z7KjZsx_D3zpT_V4zoovn.png"
+        }
+      ]
+    },
+    {
+      "title": "Homem de Ferro 2",
+      "description": "O mundo já sabe que o inventor bilionário Tony Stark (Robert Downey Jr.) é o super-herói blindado Homem de Ferro.",
+      "image": "https://img.elo7.com.br/product/zoom/26771EB/big-poster-filme-homem-de-ferro-2-lo01-tamanho-90x60-cm-marvel.jpg",
+      "cronology": 4,
+      "stars": 3,
+      "streaming": [
+        {
+          "name": "Disney Plus",
+          "image": "https://thedirect.s3.amazonaws.com/media/tag_thumbnail/The_Direct_Tag_-_Disney_Plus_ede62Wo_3qkyLJb_lAj1XIk_2eACkna_Z7KjZsx_D3zpT_V4zoovn.png"
+        }
+      ]
+    },
+    {
+      "title": "Thor",
+      "description": "Quando é banido do reino de Asgard e exilado na Terra, o arrogante guerreiro Thor (Chris Hemsworth) é obrigado a lutar para reaver seus poderes perdidos.",
+      "image": "https://img.elo7.com.br/product/original/2678608/big-poster-filme-thor-2011-lo06-tamanho-90x60-cm-vingadores.jpg",
+      "cronology": 5,
+      "stars": 3,
+      "streaming": [
+        {
+          "name": "Disney Plus",
+          "image": "https://thedirect.s3.amazonaws.com/media/tag_thumbnail/The_Direct_Tag_-_Disney_Plus_ede62Wo_3qkyLJb_lAj1XIk_2eACkna_Z7KjZsx_D3zpT_V4zoovn.png"
+        }
+      ]
+    },
+    {
+      "title": "Capitão América: Primeiro Vingador",
+      "description": "Em Capitão América: O Primeiro Vingador, conhecemos a história de Steve Rogers (Chris Evans) e como ele se tornou o melhor soldado do mundo.",
+      "image": "https://m.media-amazon.com/images/I/81slGaisBhL._SL1500_.jpg",
+      "cronology": 1,
+      "stars": 3,
+      "streaming": [
+        {
+          "name": "Disney Plus",
+          "image": "https://thedirect.s3.amazonaws.com/media/tag_thumbnail/The_Direct_Tag_-_Disney_Plus_ede62Wo_3qkyLJb_lAj1XIk_2eACkna_Z7KjZsx_D3zpT_V4zoovn.png"
+        }
+      ]
+    },
+    {
+      "title": "Capitã Marvel",
+      "description": "Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls.",
+      "image": "https://img.elo7.com.br/product/zoom/23646C7/big-poster-filme-capita-marvel-tamanho-90x60-cm-presente-geek.jpg",
+      "cronology": 2,
+      "stars": 3,
+      "streaming": [
+        {
+          "name": "Disney Plus",
+          "image": "https://thedirect.s3.amazonaws.com/media/tag_thumbnail/The_Direct_Tag_-_Disney_Plus_ede62Wo_3qkyLJb_lAj1XIk_2eACkna_Z7KjZsx_D3zpT_V4zoovn.png"
+        }
+      ]
+    },
+    {
+      "title": "Vingadores 3: Guerra Infinita",
+      "description": "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos.",
+      "image": "https://img.elo7.com.br/product/zoom/1E30435/big-poster-vingadores-guerra-infinita-tamanho-90x-0-cm-lo032-poster.jpg",
+      "cronology": 20,
+      "stars": 5,
+      "streaming": [
+        {
+          "name": "Disney Plus",
+          "image": "https://thedirect.s3.amazonaws.com/media/tag_thumbnail/The_Direct_Tag_-_Disney_Plus_ede62Wo_3qkyLJb_lAj1XIk_2eACkna_Z7KjZsx_D3zpT_V4zoovn.png"
+        }
+      ]
+    }
+  ],
+  "caracters": [
+    {
+      "id": 1,
+      "name": "Wanda Maximoff",
+      "description": "Wanda Maximoff foi sequestrada da Sérvia e trazida para a Montanha Wundagore, base do Alto Evolucionário.",
+      "image": "https://static.wikia.nocookie.net/marvel/images/c/cb/Avengers_Infinity_War_poster_020_Textless.jpg/revision/latest?cb=20190330034211&path-prefix=pt-br",
+      "stars": 4,
+      "appearances": [
+        {
+          "title": "Vingadores 2: A Era de Ultron",
+          "image": "https://www.tonica.la/__export/1587518603605/sites/debate/img/2020/04/21/avengers-revelan-disexo-descartado-ultron_crop1587518603155.jpg_423682103.jpg"
+        },
+        {
+          "title": "Capitão América 3: Guerra Civil",
+          "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg"
+        },
+        {
+          "title": "Vingadores 3: Guerra Infinita",
+          "image": "https://img.elo7.com.br/product/zoom/1E30435/big-poster-vingadores-guerra-infinita-tamanho-90x-0-cm-lo032-poster.jpg"
+        },
+        {
+          "title": "Vingadores 4: Ultimato",
+          "image": "https://img.elo7.com.br/product/zoom/2678F78/cartaz-poster-vingadores-4-ultimato-filme-marvel-avengers-colecionador.jpg"
+        },
+        {
+          "title": "WandaVision",
+          "image": "https://img.elo7.com.br/product/original/3816CC2/big-poster-serie-wandavision-lo001-cartaz.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Homem-Aranha",
+      "description": "Após ser mordido por uma aranha radioativa, Peter Parker se torna o amigo da vizinhança, o Homem-Aranha.",
+      "image": "https://i.pinimg.com/originals/9b/9c/57/9b9c57d1c851e5630bff5fe7784639bb.jpg",
+      "stars": 4,
+      "appearances": [
+        {
+          "title": "Homem-Aranha 1",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha 2",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha 3",
+          "image": ""
+        },
+        {
+          "title": "Espetacular Homem-Aranha 1",
+          "image": ""
+        },
+        {
+          "title": "Espetacular Homem-Aranha 2",
+          "image": ""
+        },
+        {
+          "title": "Capitão-América: Guerra Civil",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha no AranhaVerso",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha 1: De Volta ao Lar",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha 1: De Volta ao Lar",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 3: Guerra Infinita",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 4: Ultimato",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha 2: Longe de Casa",
+          "image": ""
+        },
+        {
+          "title": "Homem-Aranha 3: Sem Volta para Casa",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Thanos",
+      "description": "A lua Titã era governada por Mentor (A'Lars), quando então reinava paz e tecnologia. Mentor tinha dois filhos: Eros e Thanos. ",
+      "image": "https://static.wikia.nocookie.net/smallville-fanmade/images/e/ed/Screenshot_20200311-131146.jpg/revision/latest?cb=20200311171243",
+      "stars": 3,
+      "appearances": [
+        {
+          "title": "Vingadores",
+          "image": ""
+        },
+        {
+          "title": "Guardiões da Galaxia: Volume 1",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 2: A Era de Ultron",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 3: Guerra Infinita",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 4: Ultimato",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hulk",
+      "description": "Na história original dos quadrinhos, o Hulk é um selvagem e poderoso alter ego do Dr. Robert Bruce Banner.",
+      "image": "https://img.elo7.com.br/product/zoom/3BC77CB/poster-avengers-vingadores-incrivel-hulk-geek-tamanho-a4-cacadores-da-arca-perdida.jpg",
+      "stars": 3,
+      "appearances": [
+        {
+          "title": "O Incrivel Hulk",
+          "image": ""
+        },
+        {
+          "title": "Vingadores",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 2: A Era de Ultron",
+          "image": ""
+        },
+        {
+          "title": "Homem de Ferro 3",
+          "image": ""
+        },
+        {
+          "title": "Thor 3: Ragnarok",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 3: Guerra Infinita",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 4: Ultimato",
+          "image": ""
+        },
+        {
+          "title": "Shang-Chi e a Lenda dos 10 Aneis",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Visão",
+      "description": "Visão foi um androide nascido do resultado de um corpo sintético de Vibranium criado por Ultron e Helen Cho, ativado pela Joia da Mente.",
+      "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2017/03/avengers-infinity-war-character-posters-vision-1099224.jpeg",
+      "stars": 3,
+      "appearances": [
+        {
+          "title": "Vingadores 2: A Era de Ultron",
+          "image": ""
+        },
+        {
+          "title": "Capitão América 3: Guerra Civil",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 3: Guerra Infinita",
+          "image": ""
+        },
+        {
+          "title": "WandaVision",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Viúva Negra",
+      "description": "Natasha Romanoff, foi uma das mais talentosas espiãs e assassinas de todo o mundo e um membro fundador dos Vingadores.",
+      "image": "https://static.wikia.nocookie.net/universocinematograficomarvel/images/9/9a/BlackWidow-EndgameProfile.jpg/revision/latest?cb=20190511170200&path-prefix=pt",
+      "stars": 3,
+      "appearances": [
+        {
+          "title": "Homem de Ferro 2",
+          "image": ""
+        },
+        {
+          "title": "Vingadores",
+          "image": ""
+        },
+        {
+          "title": "Capitão América 2: O Soldado Invernal",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 2: A Era de Ultron",
+          "image": ""
+        },
+        {
+          "title": "Capitão América 3: Guerra Civil",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 3: Guerra Infinita",
+          "image": ""
+        },
+        {
+          "title": "Vingadores 4: Ultimato",
+          "image": ""
+        },
+        {
+          "title": "Viuva Negra",
+          "image": ""
+        }
+      ]
+    }
+  ],
+  "hqs": [
+    {
+      "name": "Parábola",
+      "description": "O único oponente do Devorador de Mundos é o herói que ele aprisionou na Terra: o Surfista Prateado...",
+      "stars": 4,
+      "creators": [
+        {
+          "name": "Stan Lee",
+          "image": "https://t.ctcdn.com.br/6jUQu3es1vPRc3M0cP-m0lDz07Q=/400x400/smart/i490804.jpeg"
+        },
+        {
+          "name": "Jack Kirby",
+          "image": "https://media.correiodocidadao.com.br/2021/01/e79fd778-kirby_capa.jpg"
+        }
+      ],
+      "shoop": [
+        {
+          "name": "Amazon",
+          "image": "https://files.tecnoblog.net/wp-content/uploads/2021/10/logotipo-da-empresa-amazon.png"
+        },
+        {
+          "name": "Americanas",
+          "image": "https://yt3.ggpht.com/ytc/AKedOLQyaUCJN9epAS6XDF6gXcSZ_yiBCEaueaFFPzU5Iw=s900-c-k-c0x00ffffff-no-rj"
+        }
+      ]
+    },
+    {
+      "name": "Wolverine - Origem",
+      "description": "Origem é uma minissérie em quadrinhos publicada pela Marvel Comics em seis edições, entre 2001 e 2002.",
+      "stars": 4,
+      "creators": [
+        {
+          "name": "Stan Lee",
+          "image": "https://t.ctcdn.com.br/6jUQu3es1vPRc3M0cP-m0lDz07Q=/400x400/smart/i490804.jpeg"
+        },
+        {
+          "name": "Jack Kirby",
+          "image": "https://media.correiodocidadao.com.br/2021/01/e79fd778-kirby_capa.jpg"
+        }
+      ],
+      "shoop": [
+        {
+          "name": "Amazon",
+          "image": "https://files.tecnoblog.net/wp-content/uploads/2021/10/logotipo-da-empresa-amazon.png"
+        },
+        {
+          "name": "Americanas",
+          "image": "https://yt3.ggpht.com/ytc/AKedOLQyaUCJN9epAS6XDF6gXcSZ_yiBCEaueaFFPzU5Iw=s900-c-k-c0x00ffffff-no-rj"
+        }
+      ]
+    },
+    {
+      "name": "Thor - Vikings",
+      "description": "Garth Ennis e sua violência atacam novamente na HQ que leva a violência das histórias de Thor ao limite!",
+      "stars": 3,
+      "creators": [
+        {
+          "name": "Stan Lee",
+          "image": "https://t.ctcdn.com.br/6jUQu3es1vPRc3M0cP-m0lDz07Q=/400x400/smart/i490804.jpeg"
+        },
+        {
+          "name": "Jack Kirby",
+          "image": "https://media.correiodocidadao.com.br/2021/01/e79fd778-kirby_capa.jpg"
+        }
+      ],
+      "shoop": [
+        {
+          "name": "Amazon",
+          "image": "https://files.tecnoblog.net/wp-content/uploads/2021/10/logotipo-da-empresa-amazon.png"
+        },
+        {
+          "name": "Americanas",
+          "image": "https://yt3.ggpht.com/ytc/AKedOLQyaUCJN9epAS6XDF6gXcSZ_yiBCEaueaFFPzU5Iw=s900-c-k-c0x00ffffff-no-rj"
+        }
+      ]
+    },
+    {
+      "name": "Em Busca do Poder",
+      "description": "Para satisfazer os desejos de sua amada Morte e provar o seu amor, Thanos vai em busca das 6 joias do infinito a fim de matar metade da humanidade.",
+      "stars": 4,
+      "creators": [
+        {
+          "name": "Stan Lee",
+          "image": "https://t.ctcdn.com.br/6jUQu3es1vPRc3M0cP-m0lDz07Q=/400x400/smart/i490804.jpeg"
+        },
+        {
+          "name": "Jack Kirby",
+          "image": "https://media.correiodocidadao.com.br/2021/01/e79fd778-kirby_capa.jpg"
+        }
+      ],
+      "shoop": [
+        {
+          "name": "Amazon",
+          "image": "https://files.tecnoblog.net/wp-content/uploads/2021/10/logotipo-da-empresa-amazon.png"
+        },
+        {
+          "name": "Americanas",
+          "image": "https://yt3.ggpht.com/ytc/AKedOLQyaUCJN9epAS6XDF6gXcSZ_yiBCEaueaFFPzU5Iw=s900-c-k-c0x00ffffff-no-rj"
+        }
+      ]
+    }
   ]
 }

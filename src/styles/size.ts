@@ -56,10 +56,18 @@ const PADDING = {
   }
 }
 
+const BORDER = {
+  small: create(13),
+  medium: create(15),
+  regular: create(22),
+  large: create(30),
+}
+
 export default {
+  create,
   LOGO,
   SCREEN, 
   FONT_SIZE,
   PADDING,
-  create,
+  BORDER,
 }

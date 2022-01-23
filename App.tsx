@@ -9,6 +9,7 @@ import Routes from './src/routes';
 
 const customFonts = {
   'Axiforma-Bold': require('./src/assets/fonts/Axiforma-Bold.otf'),
+  'Axiforma-Regular': require('./src/assets/fonts/Axiforma-Regular.otf'),
   'Axiforma-Light': require('./src/assets/fonts/Axiforma-Light.otf'),
   'Axiforma-Medium': require('./src/assets/fonts/Axiforma-Medium.otf'),
   'Axiforma-Thin': require('./src/assets/fonts/Axiforma-Thin.otf'),
