@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { StatusBar, SafeAreaView, StyleSheet } from 'react-native';
-import SingIn from './src/screens/SingIn';
+import { Provider } from 'react-redux';
 import { colors, metrics } from './src/styles';
 import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading';
+import store from './src/store';
+import Routes from './src/routes';
 
 const customFonts = {
   'Axiforma-Bold': require('./src/assets/fonts/Axiforma-Bold.otf'),
@@ -23,17 +25,19 @@ export default function App() {
   loadFonts()
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar
-        barStyle='light-content'
-        backgroundColor={colors.background}
-      />
-      {
-        fontLoaded 
-        ? <SingIn />
-        : <AppLoading />
-      }
-    </SafeAreaView>
+    <Provider store={store}>
+      <SafeAreaView style={styles.container}>
+        <StatusBar
+          barStyle='light-content'
+          backgroundColor={colors.background}
+        />
+        {
+          fontLoaded
+            ? <Routes />
+            : <AppLoading />
+        }
+      </SafeAreaView>
+    </Provider>
   );
 }
 
