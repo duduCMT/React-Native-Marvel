@@ -18,3 +18,5 @@ const Logo = styled(MotiImage).attrs({
 `
 
 export default Logo
+
+export const SHARED_ID = "@sharedId/logo"

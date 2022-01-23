@@ -3,7 +3,11 @@ import { RFValue } from 'react-native-responsive-fontsize';
 
 const { width, height } = Dimensions.get('window');
 
-export const SCREEN = {
+function create(size: number){
+  return RFValue(size, 812)  
+}
+
+const SCREEN = {
   width: width < height ? width : height,
   height: width < height ? height : width,
 
@@ -28,18 +32,14 @@ export const SCREEN = {
   },
 };
 
-export const LOGO = {
+const LOGO = {
   smallHeight: create(25),
   smallWidth: create(66),
   mediumHeight: create(56),
   mediumWidth: create(140),
 }
 
-export function create(size: number){
-  return RFValue(size, 812)  
-}
-
-export const FONT_SIZE = {
+const FONT_SIZE = {
   tiny: create(8), 
   small: create(10), 
   medium: create(12), 
@@ -48,3 +48,18 @@ export const FONT_SIZE = {
   large: create(18), 
   headline: create(20), 
 };
+
+const PADDING = {
+  header: {
+    vertical: create(30),
+    horizontal: create(42),
+  }
+}
+
+export default {
+  LOGO,
+  SCREEN, 
+  FONT_SIZE,
+  PADDING,
+  create,
+}

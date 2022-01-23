@@ -33,7 +33,7 @@ export const Gradient = styled(LinearGradient).attrs({
 })<{width?: number; height?: number}>
 `
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   ${({width}) => width ? `width: ${width}px` : ''}
   ${({height}) => height ? `height: ${height}px` : ''}
 `

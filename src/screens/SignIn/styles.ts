@@ -1,4 +1,3 @@
-import { FONT_SIZE } from './../../styles/size'
 import styled from 'styled-components/native';
 import { View, Text, TouchableOpacity, TextInput } from "react-native"
 import { MotiView } from 'moti'
@@ -14,6 +13,10 @@ export const Content = styled.View`
   align-items: center;
   margin-top: ${utils.marginTop}px;
 `
+
+export const LogoAnimator = styled(MotiView).attrs({
+  transition: { type: 'timing', duration: 800, },  
+})``
 
 export const Form = styled(MotiView).attrs({
   transition: { type: 'timing', duration: 800, },

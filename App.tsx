@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StatusBar, SafeAreaView, StyleSheet } from 'react-native';
 import { Provider } from 'react-redux';
-import { colors, metrics } from './src/styles';
+import { colors } from './src/styles';
 import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading';
 import store from './src/store';

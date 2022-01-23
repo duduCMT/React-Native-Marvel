@@ -30,8 +30,3 @@ export const animationLogo = {
     ],
   },
 }
-
-export const animationForm = {
-  from: { opacity: 0 },
-  show: { opacity: 1 },
-}
