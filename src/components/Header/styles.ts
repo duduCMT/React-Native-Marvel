@@ -4,6 +4,7 @@ import { colors, size } from "../../styles";
 
 export const Container = styled.View`
   width: 100%;
+  background-color: ${colors.background};
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

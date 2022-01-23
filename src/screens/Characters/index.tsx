@@ -13,7 +13,7 @@ type Props = {
 export default function Characters({ }: Props) {
   return (
     <Container>
-      <Header />
+      
       {/* <Title>Top 10 - Filmes Populares</Title> */}
       <Content>
         <PopularList>
@@ -53,7 +53,6 @@ export default function Characters({ }: Props) {
             secondary
             url='https://i.pinimg.com/originals/23/82/43/23824309b57a0c1828dbee2c5c4f0026.jpg'
           />
-          
         </PopularList>
       </Content>
     </Container>

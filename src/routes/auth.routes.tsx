@@ -11,8 +11,8 @@ const { Navigator, Screen } = createStackNavigator<AuthRootStackParamList>()
 
 export default function AuthRoutes() {
   return (
-    <Navigator screenOptions={{ headerShown: false }}>
-      <Screen name='SignIn' component = { SignIn } />
+    <Navigator screenOptions={{ headerShown: false }} >
+      <Screen name='SignIn' component={SignIn} />
     </Navigator>
   )
 }
