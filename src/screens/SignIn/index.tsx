@@ -11,7 +11,7 @@ import CheckBox from './components/CheckBox'
 
 import api from '../../services/api'
 import { Creators } from '../../store/ducks/user'
-import { CharactesScreenProp } from '../../routes'
+import { AppScreenProp } from '../../routes'
 
 import { animationLogo as aniLogo } from './animations'
 
@@ -32,7 +32,7 @@ import {
 
 export default function SignIn() {
   const dispatch = useDispatch()
-  const navigation = useNavigation<CharactesScreenProp>()
+  const navigation = useNavigation<AppScreenProp>()
 
   const [showForm, setShowForm] = useState(false)
   const [saveCheck, setSaveCheck] = useState(false)
@@ -56,7 +56,7 @@ export default function SignIn() {
 
       navigation.reset({
         index: 0,
-        routes: [{name: 'Charactes'}],
+        routes: [{name: 'AppRoutes', params: { screen: 'Charactes' }}, ],
       });
     }).catch((error) => {
       if (error.response) {
