@@ -1,11 +1,10 @@
+import { NavigatorScreenParams } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack'
 import Header from '../components/Header';
-import Characters from '../screens/Characters'
-
-export type CharactesScreenProp = StackNavigationProp<AppRootStackParamList, 'Charactes'>;
+import HomeRoutes, { HomeRootStackParamList } from './home.routes';
 
 export type AppRootStackParamList = {
-  Charactes: undefined;
+  Home: NavigatorScreenParams<HomeRootStackParamList>;
 };
 const { Navigator, Screen } = createStackNavigator<AppRootStackParamList>()
 
@@ -13,9 +12,8 @@ export default function AppRoutes() {
   return (
     <Navigator screenOptions={{ 
       header: () => <Header />
-      
     }}>
-      <Screen name='Charactes' component={Characters} />
+      <Screen name='Home' component={HomeRoutes} />
     </Navigator>
   )
 }

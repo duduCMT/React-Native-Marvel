@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "server": "json-server server.json -m ./node_modules/json-server-auth -w --host 192.168.0.108 --port 3333"
+    "server": "json-server server.json -m ./node_modules/json-server-auth --host 192.168.0.108 --port 3333"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",

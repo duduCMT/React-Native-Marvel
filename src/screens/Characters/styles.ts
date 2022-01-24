@@ -14,7 +14,7 @@ export const Content = styled.View`
 `
 
 export const Title = styled.Text`
-  font-family: ${fonts.title500};
+  font-family: ${fonts.title700};
   font-size: ${size.FONT_SIZE.large}px;
   color: ${colors.text};
 `

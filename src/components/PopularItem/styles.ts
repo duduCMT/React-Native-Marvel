@@ -46,7 +46,7 @@ export const Gradient = styled(LinearGradient).attrs({
 
 export const Title = styled.Text`
   font-size: ${size.FONT_SIZE.regular}px;
-  font-family: ${fonts.title500};
+  font-family: ${fonts.title700};
   color: ${colors.text};
   padding: ${create(20)}px;
 `

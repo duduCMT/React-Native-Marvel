@@ -1,5 +1,6 @@
 const fonts = {
-  title500: 'Axiforma-Bold',
+  title700: 'Axiforma-Bold',
+  title500: 'Axiforma-Medium',
   title400: 'Axiforma-Regular',
   text300: 'Axiforma-Light',
   text100: 'Axiforma-Thin',

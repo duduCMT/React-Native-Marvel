@@ -30,7 +30,7 @@ export const Form = styled(MotiView).attrs({
 export const Title = styled.Text`
   color: ${colors.text};
   font-size: ${size.FONT_SIZE.large}px;
-  font-family: ${fonts.title500};
+  font-family: ${fonts.title700};
 `
 
 export const Subtitle = styled.Text`
@@ -77,5 +77,5 @@ export const SingUpArea = styled(View)`
 export const SingUp = styled(Text) <{ span?: boolean }>`
   color: ${(props) => (props.span ? colors.primary : colors.text)};
   font-size: ${size.FONT_SIZE.big}px;
-  font-family: ${props => (props.span ? fonts.title500 : fonts.text300)};
+  font-family: ${props => (props.span ? fonts.title700 : fonts.text300)};
 `

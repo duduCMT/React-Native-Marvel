@@ -11,6 +11,6 @@ export const styles = StyleSheet.create({
   text: {
     color: colors.text,
     fontSize: size.FONT_SIZE.tiny,
-    fontFamily: fonts.title500,
+    fontFamily: fonts.title700,
   },
 })
