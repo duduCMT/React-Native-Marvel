@@ -11,11 +11,11 @@ export type HomeRootStackParamList = {
   Screen1: undefined;
 };
 const { Navigator, Screen } = createLeftTabNavigation<HomeRootStackParamList>()
-const Screen1 = () => <View style={{flex: 1, backgroundColor: 'red'}} />
+const Screen1 = () => <View style={{flex: 1, backgroundColor: 'black'}} />
 
 export default function HomeRoutes() {
   return (
-    <Navigator tabBarStyle={{backgroundColor: colors.background}}>
+    <Navigator tabBarStyle={{backgroundColor: colors.background}} backgroundColor='black'>
       <Screen name='Charactes' component={Characters} options={{title: "Personagens"}} />
       <Screen name='Screen1' component={Screen1} options={{title: "Tela 2"}}/>
     </Navigator>

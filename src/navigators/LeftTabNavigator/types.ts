@@ -10,6 +10,7 @@ type TabNavigationConfig = {
 // Screen Options
 export type TabNavigationOptions = {
   title?: string;
+  backgroundColor?: string;
 }
 
 // Mapa de Eventos
@@ -26,4 +27,6 @@ export type LeftTapNavigatorProps = DefaultNavigatorOptions<
   TabNavigationState<ParamListBase>,
   TabNavigationOptions,
   TabNavigationEventMap
-> & TabRouterOptions & TabNavigationConfig
+> & TabRouterOptions & TabNavigationConfig & {
+  backgroundColor?: string
+}

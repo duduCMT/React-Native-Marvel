@@ -35,14 +35,18 @@ export const Gradient = styled(LinearGradient).attrs({
   end: {x: 0, y: 1},
   locations: [0.1, 0.9],
 })`
-  position: absolute;
+  flex: 1;
+`
+export const GradientContainer = styled.View`
+  border-radius: ${size.BORDER.large}px;
   width: 100%;
-  height: 50%;
+  height: ${create(60)}px;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+  overflow: hidden;
 `
-
 
 export const Title = styled.Text`
   font-size: ${size.FONT_SIZE.regular}px;

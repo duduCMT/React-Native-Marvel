@@ -17,8 +17,9 @@ import {
   TabNavigationEventMap,
   TabNavigationOptions
 } from './types';
-import { colors } from '../../styles';
+import { colors, fonts, size } from '../../styles';
 import Button from './components/Button';
+import { MotiView } from 'moti';
 
 function LeftTabNavigator({
   initialRouteName,
@@ -26,6 +27,7 @@ function LeftTabNavigator({
   screenOptions,
   tabBarStyle = {},
   contentStyle = {},
+  backgroundColor = 'transparent'
 }: LeftTapNavigatorProps) {
   const { state, navigation, descriptors, NavigationContent } = useNavigationBuilder<
     TabNavigationState<ParamListBase>,
@@ -45,10 +47,12 @@ function LeftTabNavigator({
       <View style={{
         flex: 1,
         flexDirection: 'row',
+        backgroundColor: backgroundColor
       }}>
         <View style={[{
           justifyContent: 'center',
           alignItems: 'flex-start',
+          paddingRight: size.create(32),
         }, tabBarStyle]}>
           {state.routes.map((route) => (
             <Button
@@ -75,9 +79,14 @@ function LeftTabNavigator({
             />
           ))}
         </View>
-        <View style={[{ flex: 1 }, contentStyle]}>
+        <MotiView 
+          from={{ opacity: 0 }}
+          animate={{opacity: 1}}
+          transition={{type: 'timing', duration: 800}}
+          style={[{ flex: 1 }, contentStyle]}
+        >
           {descriptors[state.routes[state.index].key].render()}
-        </View>
+        </MotiView>
       </View>
     </NavigationHelpersContext.Provider>
   );

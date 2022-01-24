@@ -11,11 +11,12 @@ export const ButtonContainer = styled.TouchableOpacity.attrs({
 })`
   width: ${create(40)}px;
   height: ${widthRotate}px;
-  border-top-right-radius: ${size.BORDER.small}px;
-  border-bottom-right-radius: ${size.BORDER.small}px;
+  border-top-right-radius: ${size.BORDER.medium}px;
+  border-bottom-right-radius: ${size.BORDER.medium}px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  margin-top: ${create(-8)}px;
 `
 
 export const Gradient = styled(LinearGradient).attrs({
