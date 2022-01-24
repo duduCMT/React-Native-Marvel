@@ -24,7 +24,7 @@
   ],
   "movies": [
     {
-      "title": "Homem de Ferro",
+      "name": "Homem de Ferro",
       "description": "Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor.",
       "image": "https://img.elo7.com.br/product/zoom/1DFB189/poster-cartaz-iron-man-homem-de-ferro-poster-tematico.jpg",
       "cronology": 3,
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "title": "Homem de Ferro 2",
+      "name": "Homem de Ferro 2",
       "description": "O mundo já sabe que o inventor bilionário Tony Stark (Robert Downey Jr.) é o super-herói blindado Homem de Ferro.",
       "image": "https://img.elo7.com.br/product/zoom/26771EB/big-poster-filme-homem-de-ferro-2-lo01-tamanho-90x60-cm-marvel.jpg",
       "cronology": 4,
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "title": "Thor",
+      "name": "Thor",
       "description": "Quando é banido do reino de Asgard e exilado na Terra, o arrogante guerreiro Thor (Chris Hemsworth) é obrigado a lutar para reaver seus poderes perdidos.",
       "image": "https://img.elo7.com.br/product/original/2678608/big-poster-filme-thor-2011-lo06-tamanho-90x60-cm-vingadores.jpg",
       "cronology": 5,
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "title": "Capitão América: Primeiro Vingador",
+      "name": "Capitão América: Primeiro Vingador",
       "description": "Em Capitão América: O Primeiro Vingador, conhecemos a história de Steve Rogers (Chris Evans) e como ele se tornou o melhor soldado do mundo.",
       "image": "https://m.media-amazon.com/images/I/81slGaisBhL._SL1500_.jpg",
       "cronology": 1,
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "title": "Capitã Marvel",
+      "name": "Capitã Marvel",
       "description": "Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls.",
       "image": "https://img.elo7.com.br/product/zoom/23646C7/big-poster-filme-capita-marvel-tamanho-90x60-cm-presente-geek.jpg",
       "cronology": 2,
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "title": "Vingadores 3: Guerra Infinita",
+      "name": "Vingadores 3: Guerra Infinita",
       "description": "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos.",
       "image": "https://img.elo7.com.br/product/zoom/1E30435/big-poster-vingadores-guerra-infinita-tamanho-90x-0-cm-lo032-poster.jpg",
       "cronology": 20,
@@ -111,23 +111,23 @@
       "stars": 4,
       "appearances": [
         {
-          "title": "Vingadores 2: A Era de Ultron",
+          "name": "Vingadores 2: A Era de Ultron",
           "image": "https://www.tonica.la/__export/1587518603605/sites/debate/img/2020/04/21/avengers-revelan-disexo-descartado-ultron_crop1587518603155.jpg_423682103.jpg"
         },
         {
-          "title": "Capitão América 3: Guerra Civil",
+          "name": "Capitão América 3: Guerra Civil",
           "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg"
         },
         {
-          "title": "Vingadores 3: Guerra Infinita",
+          "name": "Vingadores 3: Guerra Infinita",
           "image": "https://img.elo7.com.br/product/zoom/1E30435/big-poster-vingadores-guerra-infinita-tamanho-90x-0-cm-lo032-poster.jpg"
         },
         {
-          "title": "Vingadores 4: Ultimato",
+          "name": "Vingadores 4: Ultimato",
           "image": "https://img.elo7.com.br/product/zoom/2678F78/cartaz-poster-vingadores-4-ultimato-filme-marvel-avengers-colecionador.jpg"
         },
         {
-          "title": "WandaVision",
+          "name": "WandaVision",
           "image": "https://img.elo7.com.br/product/original/3816CC2/big-poster-serie-wandavision-lo001-cartaz.jpg"
         }
       ]
@@ -140,55 +140,55 @@
       "stars": 4,
       "appearances": [
         {
-          "title": "Homem-Aranha 1",
+          "name": "Homem-Aranha 1",
           "image": ""
         },
         {
-          "title": "Homem-Aranha 2",
+          "name": "Homem-Aranha 2",
           "image": ""
         },
         {
-          "title": "Homem-Aranha 3",
+          "name": "Homem-Aranha 3",
           "image": ""
         },
         {
-          "title": "Espetacular Homem-Aranha 1",
+          "name": "Espetacular Homem-Aranha 1",
           "image": ""
         },
         {
-          "title": "Espetacular Homem-Aranha 2",
+          "name": "Espetacular Homem-Aranha 2",
           "image": ""
         },
         {
-          "title": "Capitão-América: Guerra Civil",
+          "name": "Capitão-América: Guerra Civil",
           "image": ""
         },
         {
-          "title": "Homem-Aranha no AranhaVerso",
+          "name": "Homem-Aranha no AranhaVerso",
           "image": ""
         },
         {
-          "title": "Homem-Aranha 1: De Volta ao Lar",
+          "name": "Homem-Aranha 1: De Volta ao Lar",
           "image": ""
         },
         {
-          "title": "Homem-Aranha 1: De Volta ao Lar",
+          "name": "Homem-Aranha 1: De Volta ao Lar",
           "image": ""
         },
         {
-          "title": "Vingadores 3: Guerra Infinita",
+          "name": "Vingadores 3: Guerra Infinita",
           "image": ""
         },
         {
-          "title": "Vingadores 4: Ultimato",
+          "name": "Vingadores 4: Ultimato",
           "image": ""
         },
         {
-          "title": "Homem-Aranha 2: Longe de Casa",
+          "name": "Homem-Aranha 2: Longe de Casa",
           "image": ""
         },
         {
-          "title": "Homem-Aranha 3: Sem Volta para Casa",
+          "name": "Homem-Aranha 3: Sem Volta para Casa",
           "image": ""
         }
       ]
@@ -201,23 +201,23 @@
       "stars": 3,
       "appearances": [
         {
-          "title": "Vingadores",
+          "name": "Vingadores",
           "image": ""
         },
         {
-          "title": "Guardiões da Galaxia: Volume 1",
+          "name": "Guardiões da Galaxia: Volume 1",
           "image": ""
         },
         {
-          "title": "Vingadores 2: A Era de Ultron",
+          "name": "Vingadores 2: A Era de Ultron",
           "image": ""
         },
         {
-          "title": "Vingadores 3: Guerra Infinita",
+          "name": "Vingadores 3: Guerra Infinita",
           "image": ""
         },
         {
-          "title": "Vingadores 4: Ultimato",
+          "name": "Vingadores 4: Ultimato",
           "image": ""
         }
       ]
@@ -230,35 +230,35 @@
       "stars": 3,
       "appearances": [
         {
-          "title": "O Incrivel Hulk",
+          "name": "O Incrivel Hulk",
           "image": ""
         },
         {
-          "title": "Vingadores",
+          "name": "Vingadores",
           "image": ""
         },
         {
-          "title": "Vingadores 2: A Era de Ultron",
+          "name": "Vingadores 2: A Era de Ultron",
           "image": ""
         },
         {
-          "title": "Homem de Ferro 3",
+          "name": "Homem de Ferro 3",
           "image": ""
         },
         {
-          "title": "Thor 3: Ragnarok",
+          "name": "Thor 3: Ragnarok",
           "image": ""
         },
         {
-          "title": "Vingadores 3: Guerra Infinita",
+          "name": "Vingadores 3: Guerra Infinita",
           "image": ""
         },
         {
-          "title": "Vingadores 4: Ultimato",
+          "name": "Vingadores 4: Ultimato",
           "image": ""
         },
         {
-          "title": "Shang-Chi e a Lenda dos 10 Aneis",
+          "name": "Shang-Chi e a Lenda dos 10 Aneis",
           "image": ""
         }
       ]
@@ -268,22 +268,22 @@
       "name": "Visão",
       "description": "Visão foi um androide nascido do resultado de um corpo sintético de Vibranium criado por Ultron e Helen Cho, ativado pela Joia da Mente.",
       "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2017/03/avengers-infinity-war-character-posters-vision-1099224.jpeg",
-      "stars": 3,
+      "stars": 4,
       "appearances": [
         {
-          "title": "Vingadores 2: A Era de Ultron",
+          "name": "Vingadores 2: A Era de Ultron",
           "image": ""
         },
         {
-          "title": "Capitão América 3: Guerra Civil",
+          "name": "Capitão América 3: Guerra Civil",
           "image": ""
         },
         {
-          "title": "Vingadores 3: Guerra Infinita",
+          "name": "Vingadores 3: Guerra Infinita",
           "image": ""
         },
         {
-          "title": "WandaVision",
+          "name": "WandaVision",
           "image": ""
         }
       ]
@@ -296,35 +296,35 @@
       "stars": 3,
       "appearances": [
         {
-          "title": "Homem de Ferro 2",
+          "name": "Homem de Ferro 2",
           "image": ""
         },
         {
-          "title": "Vingadores",
+          "name": "Vingadores",
           "image": ""
         },
         {
-          "title": "Capitão América 2: O Soldado Invernal",
+          "name": "Capitão América 2: O Soldado Invernal",
           "image": ""
         },
         {
-          "title": "Vingadores 2: A Era de Ultron",
+          "name": "Vingadores 2: A Era de Ultron",
           "image": ""
         },
         {
-          "title": "Capitão América 3: Guerra Civil",
+          "name": "Capitão América 3: Guerra Civil",
           "image": ""
         },
         {
-          "title": "Vingadores 3: Guerra Infinita",
+          "name": "Vingadores 3: Guerra Infinita",
           "image": ""
         },
         {
-          "title": "Vingadores 4: Ultimato",
+          "name": "Vingadores 4: Ultimato",
           "image": ""
         },
         {
-          "title": "Viuva Negra",
+          "name": "Viuva Negra",
           "image": ""
         }
       ]

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StatusBar, SafeAreaView, StyleSheet } from 'react-native';
 import { Provider } from 'react-redux';
 import { colors } from './src/styles';

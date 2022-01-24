@@ -12,8 +12,8 @@ import CheckBox from './components/CheckBox'
 import api from '../../services/api'
 import { Creators } from '../../store/ducks/user'
 import { AppScreenProp } from '../../routes'
-
 import { animationLogo as aniLogo } from './animations'
+
 
 import {
   Container,
@@ -28,6 +28,7 @@ import {
   SingUp,
   LogoAnimator,
 } from './styles'
+import { LOGGED_USER } from '../../configs/database';
 
 
 export default function SignIn() {
@@ -51,13 +52,10 @@ export default function SignIn() {
       email,
       password
     }).then((response) => {
-      const user = response.data.user as User
-      dispatch(Creators.setUser(user))
+      const data = response.data.user
+      data.password = password
+      singin(data as User)
 
-      navigation.reset({
-        index: 0,
-        routes: [{name: 'AppRoutes', params: { screen: 'Charactes' }}, ],
-      });
     }).catch((error) => {
       if (error.response) {
         switch (error.response.status) {
@@ -69,19 +67,31 @@ export default function SignIn() {
     })
   }
 
+  function singin(user: User) {
+    dispatch(Creators.setUser(user))
+
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'AppRoutes', params: { screen: 'Charactes' } },],
+    });
+  }
+
   useEffect(() => {
-    if (animationLogo.current === 'from') {
-      setTimeout(() => {
-        animationLogo.transitionTo('position2')
+    function animations(){
+      if (animationLogo.current === 'from') {
         setTimeout(() => {
-          animationLogo.transitionTo('position3')
+          animationLogo.transitionTo('position2')
           setTimeout(() => {
-            animationLogo.transitionTo('position4')
-            setShowForm(true)
+            animationLogo.transitionTo('position3')
+            setTimeout(() => {
+              animationLogo.transitionTo('position4')
+              setShowForm(true)
+            }, 1400)
           }, 1400)
-        }, 1400)
-      }, 600)
+        }, 600)
+      }
     }
+    animations()
   }, [])
 
   return (
@@ -93,43 +103,43 @@ export default function SignIn() {
               <Logo />
             </SharedElement>
           </LogoAnimator>
-          
-          { showForm &&
-          <Form 
-            from={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-            <Title>Bem-Vindo!</Title>
-            <Subtitle>Fazer Login!</Subtitle>
-            <Input
-              placeholder='E-mail'
-              keyboardType='email-address'
-              style={{ marginTop: 20 }}
-              value={email}
-              onChangeText={text => setEmail(text)}
-            />
-            <Input
-              placeholder='Senha'
-              secureTextEntry
-              style={{ marginTop: 15 }}
-              value={password}
-              onChangeText={text => setPassword(text)}
-            />
-            <Button onPress={() => handleSubmit()}>
-              <ButtonText>Entrar</ButtonText>
-            </Button>
-            <CheckBox
-              title='Salvar dados de login e entrar automaticamente'
-              checked={saveCheck}
-              onPress={() => setSaveCheck(!saveCheck)}
-            />
-            <SingUpArea>
-              <SingUp>É novo(a) aqui? </SingUp>
-              <TouchableOpacity activeOpacity={0.7} >
-                <SingUp span>Cadastre-se</SingUp>
-              </TouchableOpacity>
-            </SingUpArea>
-          </Form>
+
+          {showForm &&
+            <Form
+              from={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              <Title>Bem-Vindo!</Title>
+              <Subtitle>Fazer Login!</Subtitle>
+              <Input
+                placeholder='E-mail'
+                keyboardType='email-address'
+                style={{ marginTop: 20 }}
+                value={email}
+                onChangeText={text => setEmail(text)}
+              />
+              <Input
+                placeholder='Senha'
+                secureTextEntry
+                style={{ marginTop: 15 }}
+                value={password}
+                onChangeText={text => setPassword(text)}
+              />
+              <Button onPress={() => handleSubmit()}>
+                <ButtonText>Entrar</ButtonText>
+              </Button>
+              <CheckBox
+                title='Salvar dados de login e entrar automaticamente'
+                checked={saveCheck}
+                onPress={() => setSaveCheck(!saveCheck)}
+              />
+              <SingUpArea>
+                <SingUp>É novo(a) aqui? </SingUp>
+                <TouchableOpacity activeOpacity={0.7} >
+                  <SingUp span>Cadastre-se</SingUp>
+                </TouchableOpacity>
+              </SingUpArea>
+            </Form>
           }
         </Content>
       </Background>

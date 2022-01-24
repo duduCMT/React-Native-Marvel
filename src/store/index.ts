@@ -8,6 +8,7 @@ export interface ApplicationState {
   user: UserState
 }
 
+
 const store: Store<ApplicationState> = createStore(reducers)
 
 export default store

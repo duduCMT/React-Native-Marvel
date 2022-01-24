@@ -6,16 +6,16 @@ import Stars from '../Stars'
 import { PopularList as Container } from './styles'
 
 type Props = {
-
+  characters: Character[]
 }
 
-export default function PopularList({ }: Props) {
+export default function PopularList({ characters }: Props) {
   return (
     <Container>
       <View>
         <PopularItem
-          title='Wanda Maximoff'
-          url='https://static.wikia.nocookie.net/marvel/images/c/cb/Avengers_Infinity_War_poster_020_Textless.jpg/revision/latest?cb=20190330034211&path-prefix=pt-br'
+          title={characters[0].name}
+          url={characters[0].image}
         />
         <Stars
           style={{
@@ -24,7 +24,7 @@ export default function PopularList({ }: Props) {
             right: -120,
           }}
           title='Avaliação dos fãns'
-          stars={4}
+          stars={characters[0].stars}
         />
       </View>
 
@@ -36,7 +36,7 @@ export default function PopularList({ }: Props) {
           borderRadius: size.BORDER.regular
         }}
         secondary
-        url='https://i.pinimg.com/originals/23/82/43/23824309b57a0c1828dbee2c5c4f0026.jpg'
+        url={characters[1].image}
       />
       <PopularItem
         style={{
@@ -46,7 +46,7 @@ export default function PopularList({ }: Props) {
           borderRadius: size.BORDER.small
         }}
         secondary
-        url='https://i.pinimg.com/originals/23/82/43/23824309b57a0c1828dbee2c5c4f0026.jpg'
+        url={characters[2].image}
       />
     </Container>
   )
