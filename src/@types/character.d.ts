@@ -6,3 +6,15 @@ type Character = {
   stars: number;
   appearances: PairData[]
 }
+
+type SimpleCharacter = {
+  id: number;
+  name: string;
+  image: string;
+  stars: number; 
+}
+
+type  BestCharacters = {
+  best: Character;
+  others: SimpleCharacter[];
+}

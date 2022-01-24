@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { ActivityIndicator } from 'react-native'
+import { ActivityIndicator, ScrollView, Text } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import ErrorView from '../../components/ErrorView'
 import PopularList from '../../components/PopularList'
-import api from '../../services/api'
+import { useBestCharacters, UseRequestStatus } from '../../hooks'
 import { colors, size } from '../../styles'
 import { 
   Apparitions,
@@ -15,55 +16,62 @@ import {
   ViewMore 
 } from './styles'
 
+import ListAccess from '../../components/ListAccess'
+
 type Props = {
 
 }
 
 export default function Characters({ }: Props) {
-  const [characters, setCharacters] = useState<Character[]>([])
-  const [error, setError] = useState('')
+  const  { 
+    bestCharacters, 
+    stateBestCharacter, 
+    getBestCharacters 
+  } = useBestCharacters()
 
   useEffect(() => {
-    function requestCaracters(){
-      api.get('/caracters').then((response) => {  
-        const data = response.data as Character[] 
-        const filter: Character[] = data.sort((n1, n2) => n2.stars - n1.stars)
-        setTimeout(() => {
-          setCharacters(filter)
-        }, 300)
-      })
-    }
-    requestCaracters()
+    getBestCharacters()
   }, [])
 
   return (
     <Container>
-      { characters.length > 0 ?
-      <Content>
-        <Title>Top 10 - Filmes Populares</Title> 
-        <PopularList characters={characters} />
+      { stateBestCharacter.status === UseRequestStatus.SUCCESS ? (
+        <ScrollView>
+          <Content>
+            <Title>Top 10 - Filmes Populares</Title> 
+            <PopularList characters={bestCharacters} />
 
-        <DescriptionArea>
-          <Description>
-            { characters[0].description } 
-          </Description>
-          <TouchableOpacity activeOpacity={0.7}>
-            <ViewMore>
-              Ver Mais
-            </ViewMore>
-          </TouchableOpacity>
-        </DescriptionArea>
+            <DescriptionArea>
+              <Description>
+                {bestCharacters.best.description}
+              </Description>
+              <TouchableOpacity activeOpacity={0.7}>
+                <ViewMore>Ver Mais</ViewMore>
+              </TouchableOpacity>
+            </DescriptionArea>
 
-        <Apparitions 
-          title="Aparições:" 
-          pairs={characters[0].appearances} 
+            <Apparitions 
+              title="Aparições:" 
+              pairs={bestCharacters.best.appearances} 
+            />
+
+            <ListAccess 
+              style={{marginTop: size.create(43) }}
+              title="Personagens"
+            />
+          </Content>
+        </ScrollView>
+      ) : stateBestCharacter.status === UseRequestStatus.LOADING ? (
+        <ActivityIndicator 
+          size='large' 
+          color={colors.primary} 
         />
-      </Content>
-      : 
-        <> 
-          <ActivityIndicator size='large' color={colors.primary} />
-        </>
-      }
+      ) : (
+        <ErrorView 
+          code={stateBestCharacter.statusCode}
+          message={stateBestCharacter.message} 
+        />
+      )}
     </Container>
   )
 }

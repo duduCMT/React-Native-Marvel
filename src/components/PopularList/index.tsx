@@ -6,7 +6,7 @@ import Stars from '../Stars'
 import { PopularList as Container } from './styles'
 
 type Props = {
-  characters: Character[]
+  characters: BestCharacters
 }
 
 export default function PopularList({ characters }: Props) {
@@ -14,8 +14,8 @@ export default function PopularList({ characters }: Props) {
     <Container>
       <View>
         <PopularItem
-          title={characters[0].name}
-          url={characters[0].image}
+          title={characters.best.name}
+          url={characters.best.image}
         />
         <Stars
           style={{
@@ -24,7 +24,7 @@ export default function PopularList({ characters }: Props) {
             right: -120,
           }}
           title='Avaliação dos fãns'
-          stars={characters[0].stars}
+          stars={characters.best.stars}
         />
       </View>
 
@@ -36,7 +36,7 @@ export default function PopularList({ characters }: Props) {
           borderRadius: size.BORDER.regular
         }}
         secondary
-        url={characters[1].image}
+        url={characters.others[0].image}
       />
       <PopularItem
         style={{
@@ -46,7 +46,7 @@ export default function PopularList({ characters }: Props) {
           borderRadius: size.BORDER.small
         }}
         secondary
-        url={characters[2].image}
+        url={characters.others[1].image}
       />
     </Container>
   )
