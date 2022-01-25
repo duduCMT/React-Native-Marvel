@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ActivityIndicator, ScrollView, Text } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { useNavigation } from '@react-navigation/native'
 import ErrorView from '../../components/ErrorView'
 import PopularList from '../../components/PopularList'
 import { useBestCharacters, UseRequestStatus } from '../../hooks'
@@ -17,12 +18,15 @@ import {
 } from './styles'
 
 import ListAccess from '../../components/ListAccess'
+import { AppScreenProp } from '../../routes'
 
 type Props = {
 
 }
 
 export default function Characters({ }: Props) {
+  const navigation = useNavigation<AppScreenProp>()
+
   const  { 
     bestCharacters, 
     stateBestCharacter, 
@@ -58,6 +62,9 @@ export default function Characters({ }: Props) {
             <ListAccess 
               style={{marginTop: size.create(43) }}
               title="Personagens"
+              onViewMorePress={() => {
+                navigation.push('AppRoutes', { screen: 'CharactersList' })
+              }}
             />
           </Content>
         </ScrollView>
