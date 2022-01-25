@@ -35,7 +35,7 @@ $ ipconfig
    
 6. Localize o arquivo ``./src/services/api.ts``. ([Link](https://github.com/duduCMT/React-Native-Marvel/blob/master/src/services/api.ts))
    
-7. Na constante IP, atribua o valor do ip copado anteriormente e salve o arquivo.
+7. Na constante IP, atribua o valor do ip copido anteriormente e salve o arquivo.
 
 <br>
 
@@ -50,7 +50,7 @@ Com as dependências instaladas, já é possível iniciar o servidor com o coman
 $ yarn server
 ```
 
-Para executar o expo, em um segundo terminal use o comando:
+Para executar o expo, em um segundo terminal, use o comando:
 ```
 $ expo start
 ```
