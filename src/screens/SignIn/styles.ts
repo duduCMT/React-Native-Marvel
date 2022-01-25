@@ -39,7 +39,7 @@ export const Subtitle = styled.Text`
   margin-top: ${create(10)}px;
   font-family: ${fonts.text300};
 `
-export const Input = styled(TextInput).attrs({
+export const Input = styled.TextInput.attrs({
   selectionColor: colors.primary,
 })`
   height: ${create(38)}px;
@@ -52,7 +52,7 @@ export const Input = styled(TextInput).attrs({
   color: #000;
 `
 
-export const Button = styled(TouchableOpacity).attrs({
+export const Button = styled.TouchableOpacity.attrs({
   activeOpacity: 0.7,
 })`
   height: ${create(38)}px;
@@ -65,16 +65,16 @@ export const Button = styled(TouchableOpacity).attrs({
   margin-top: ${create(23)}px;
 `
 
-export const ButtonText = styled(Text)`
+export const ButtonText = styled.Text`
   color: ${colors.text};
   font-size: ${size.FONT_SIZE.big}px;
   font-family: ${fonts.text300};
 `
-export const SingUpArea = styled(View)`
+export const SingUpArea = styled.View`
   flex-direction: row;
   margin-top: ${create(19)}px;
 `
-export const SingUp = styled(Text) <{ span?: boolean }>`
+export const SingUp = styled.Text<{ span?: boolean }>`
   color: ${(props) => (props.span ? colors.primary : colors.text)};
   font-size: ${size.FONT_SIZE.big}px;
   font-family: ${props => (props.span ? fonts.title700 : fonts.text300)};

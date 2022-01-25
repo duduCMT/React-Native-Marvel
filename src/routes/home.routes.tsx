@@ -8,16 +8,21 @@ export type CharactesScreenProp = StackNavigationProp<HomeRootStackParamList, 'C
 
 export type HomeRootStackParamList = {
   Charactes: undefined;
-  Screen1: undefined;
+  Movies: undefined;
+  Hqs: undefined;
 };
 const { Navigator, Screen } = createLeftTabNavigation<HomeRootStackParamList>()
-const Screen1 = () => <View style={{flex: 1, backgroundColor: 'black'}} />
+
+//Telas Paenas para Teste
+const Movies = () => <View style={{flex: 1, backgroundColor: colors.background}} />
+const Hqs = () => <View style={{flex: 1, backgroundColor: colors.background}} />
 
 export default function HomeRoutes() {
   return (
-    <Navigator tabBarStyle={{backgroundColor: colors.background}} backgroundColor='black'>
+    <Navigator tabBarStyle={{backgroundColor: colors.background}} backgroundColor={colors.background}>
       <Screen name='Charactes' component={Characters} options={{title: "Personagens"}} />
-      <Screen name='Screen1' component={Screen1} options={{title: "Tela 2"}}/>
+      <Screen name='Movies' component={Movies} options={{title: "Filmes"}}/>
+      <Screen name='Hqs' component={Hqs} options={{title: "Quadrinhos"}}/>
     </Navigator>
   )
 }

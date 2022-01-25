@@ -14,7 +14,7 @@ type SimpleCharacter = {
   stars: number; 
 }
 
-type  BestCharacters = {
+type BestCharacters = {
   best: Character;
   others: SimpleCharacter[];
 }

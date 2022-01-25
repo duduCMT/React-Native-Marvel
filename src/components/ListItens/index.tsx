@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, FlatList } from 'react-native'
 import { size } from '../../styles'
 import ItemList from '../ItemList'
 
@@ -18,6 +18,7 @@ type Props = {
 }
 
 export default function ListItens({data, onPress}: Props){
+  //FletList temporariamente implementada
   return (
     <FlatList
       contentContainerStyle={{
