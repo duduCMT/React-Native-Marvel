@@ -42,7 +42,7 @@ export default function Characters({ }: Props) {
       { stateBestCharacter.status === UseRequestStatus.SUCCESS ? (
         <ScrollView>
           <Content>
-            <Title>Top 10 - Filmes Populares</Title> 
+            <Title>Top 10 - Personagens Populares</Title> 
             <PopularList characters={bestCharacters} />
 
             <DescriptionArea>

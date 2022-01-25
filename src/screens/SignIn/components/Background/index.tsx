@@ -75,7 +75,11 @@ export default function Background({ children }: Props) {
             state={animationBg1}
             exit={{ opacity: 0 }}
           >
-            <BackgroundImage resizeMode='cover' source={bg1} />
+            <BackgroundImage 
+              style={{width: '100%', height: '100%'}}
+              resizeMode='cover' 
+              source={bg1} 
+            />
           </SolidBackgroundContainer>
         }
       </AnimatePresence>
