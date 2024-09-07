@@ -7,9 +7,9 @@ const users = [
     id: 1
   },
   {
-    email: "vitoria@email.com",
+    email: "lane@email.com",
     password: "$2a$10$NWEcVW2OzVIDKvfZI2BKmequRUt4J0GL/eXjfVQgSmWsXd7TIAk0W",
-    name: "Vitória Laryssa",
+    name: "Lane Due",
     avatar: "https://static.diverseui.com/female-88.jpg",
     id: 2
   },
