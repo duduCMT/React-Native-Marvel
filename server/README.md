@@ -4,8 +4,8 @@
 - E-mail: eduardo@email.com
 - Senha: 123456
   
-### Vitória Laryssa
-- E-mail: vitoria@email.com
+### Lane Due
+- E-mail: lane@email.com
 - Senha: 102030
 
 ### Leandro Soares
